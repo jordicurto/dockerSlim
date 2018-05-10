@@ -3,6 +3,7 @@ MAINTAINER kenneth@floss.cat
 
 RUN     apt-get update && \
         apt-get --no-install-recommends -y install libapache2-mod-php7.0 && \
+        apt-get clean && \
         rm -f /var/www/html/*.html && \
         rm -rf /var/lib/apt/cache && \
         rm -rf /usr/share/doc && \
